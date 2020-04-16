@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>AirZond</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Altera"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Подключение css -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- end -->
+
+    <!-- [if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<section class="cabinet-page">
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="row align-items-end justify-content-between">
+                    <a href="index.html" class="col-lg-2 col-md-2 col-sm-3 logo">
+                        <img src="img/logo1.png" alt="">
+                    </a>
+                    <div class="col-lg-2 phone">
+                        <p>+7 964 245 72 73</p>
+                    </div>
+                    <div class="col-lg-2 mail">
+                        <p>info@airzond.ru</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 offset-lg-1 offset-md-4">
+                        <a href="javascript:;" class="help" data-fancybox data-src="#feedback-form">Помощь</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-6 private-office-block">
+                        <a href="javascript:;" class="private-office">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <form action="" class="feedback-form" id="feedback-form">
+            <h2>Перезвоните мне</h2>
+            <div>
+                <label>Ваше имя</label>
+                <input type="text" name="firstname" class="input">
+            </div>
+            <div>
+                <label>Номер телефона</label>
+                <input type="tel" name="phone" class="input">
+            </div>
+            <div>
+                <p class="agree">Отправляя форму, Вы принимаете условия <a href="javascript:;">Пользовательского соглашения</a> и
+                    <a href="javascript:;">политики конфиденциальности</a></p>
+            </div>
+            <div>
+                <input type="submit" value="Перезвоните мне" class="submit">
+            </div>
+        </form>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <h2 class="company-name">Логин: example@example.ru</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <form action="" class="zond-date-form">
+                        <label>Выберите дату:</label>
+                        <input type="text" name="datefilter" id="zond-date" class="zond-date"/>
+
+                    </form>
+                </div>
+                <div class="col-8">
+                    <div class="table-select">
+                        <form action="" class="zond-select-form">
+                            <label>Выберите Airzond:</label>
+                            <div class="zond-select-container">
+                                <select name="" id="zond-select" class="zond-select">
+                                    <option value="all" selected>Со всех AirZond</option>
+                                    <option value="">Другой Airzond</option>
+                                    <option value="">Еще AirZond</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>Общая аудитория</td>
+                                <td>Новые</td>
+                                <td>Постоянные</td>
+                                <td>Проходили мимо</td>
+                                <td>Посетители</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1000000</td>
+                                <td>1000000</td>
+                                <td>1000000</td>
+                                <td>1000000</td>
+                                <td>1000000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="zond-info-download">
+                        <a href="javascript:;" data-fancybox data-src="#download-form">Выгрузить mac-адреса</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<form class="download-form" id="download-form">
+    <h2>Название выгрузки</h2>
+    <div>
+        <label>Выберите Airzond:</label>
+        <div class="zond-select-container">
+            <select name="" id="zond-select-form" class="zond-select">
+                <option value="all" selected>Со всех AirZond</option>
+                <option value="">Другой Airzond</option>
+                <option value="">Еще AirZond</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <label>Выберите дату:</label>
+        <input type="text" name="datefilter" id="zond-date-form" class="zond-date"/>
+    </div>
+
+    <div>
+        <input type="submit" value="Выгрузить" class="submit">
+    </div>
+</form>
+
+<script src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/common.js"></script>
+<!-- end -->
+</body>
+</html>

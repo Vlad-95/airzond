@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>AirZond</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Altera"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Подключение css -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- end -->
+
+    <!-- [if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<section class="registration-page">
+    <header class="header">
+
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="row align-items-end">
+                    <a href="index.html" class="col-2 logo">
+                        <img src="img/logo1.png" alt="">
+                    </a>
+                    <div class="col-2 phone">
+                        <p>+7 964 245 72 73</p>
+                    </div>
+                    <div class="col-2 mail">
+                        <p>info@airzond.ru</p>
+                    </div>
+                    <div class="col-2 offset-sm-1">
+                        <a href="javascript:;" class="callback" data-fancybox data-src="#feedback-form">Перезвоните мне</a>
+                    </div>
+                    <div class="col-3 private-office-block">
+                        <a href="javascript:;" class="private-office" data-fancybox data-src="#cabinet-entry">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" class="feedback-form" id="feedback-form">
+            <h2>Перезвоните мне</h2>
+            <div>
+                <label>Ваше имя</label>
+                <input type="text" name="firstname" class="input">
+            </div>
+            <div>
+                <label>Номер телефона</label>
+                <input type="tel" name="phone" class="input">
+            </div>
+            <div>
+                <p class="agree">Отправляя форму, Вы принимаете условия <a href="javascript:;">Пользовательского соглашения</a> и
+                    <a href="javascript:;">политики конфиденциальности</a></p>
+            </div>
+            <div>
+                <input type="submit" value="Перезвоните мне" class="submit">
+            </div>
+        </form>
+
+        <form action="" class="cabinet-entry" id="cabinet-entry">
+            <h2>Войти в личный кабинет</h2>
+            <div>
+                <label>Номер телефона</label>
+                <input type="tel" name="" class="input">
+            </div>
+            <div>
+                <label>Пароль</label>
+                <input type="password" name="" class="input">
+            </div>
+            <div>
+                <input type="submit" value="Войти" class="submit">
+            </div>
+            <div class="reg-link">
+                <p>Если еще нет аккаунта, <a href="registration.html">зарегистрируйтесь</a></p>
+            </div>
+        </form>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <form action="" class="reg-form">
+                    <h2>Регистрация</h2>
+                    <div>
+                        <label>Ваше имя</label>
+                        <input type="text" name="" class="input">
+                    </div>
+                    <div>
+                        <label>Номер телефона</label>
+                        <input type="tel" name="" class="input">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="" class="input">
+                    </div>
+                    <div>
+                        <label>Пароль</label>
+                        <input type="password" name="" class="input">
+                    </div>
+                    <div>
+                        <label>Подтверждение пароля</label>
+                        <input type="password" name="" class="input">
+                    </div>
+                    <div>
+                        <input type="submit" class="submit" value="Зарегистрироваться">
+                    </div>
+                    <div>
+                        <p class="agree">Отправляя форму, Вы принимаете условия <a href="javascript:;">Пользовательского соглашения</a> и
+                            <a href="javascript:;">политики конфиденциальности</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Подключение javscript -->
+<script src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/libs.js"></script>
+<script src="js/common.js"></script>
+<!-- end -->
+</body>
+</html>
